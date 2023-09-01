@@ -344,7 +344,6 @@ header{
 }
 }
   
-
   .nav {
     height: calc(var(--header-height) + 2rem);
     display: flex;
@@ -440,17 +439,6 @@ header{
 .slider{
     margin-bottom: 4rem;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -698,7 +686,6 @@ left: 350px;
   padding: 3rem;
   border: 10px solid green;
   font-size: 60px;
-  text-decoration: border pink;
   font-family: 'Oswald';
 }
 
@@ -788,7 +775,7 @@ left: 350px;
     font-weight: 800;
     margin-top: 1em;
     margin-bottom: 1em;
-    color: yellow;
+    color:#e1ad01 ;
 }
 .stream-button{
     margin-top: 2em;
@@ -803,11 +790,11 @@ left: 350px;
 .stream-button:hover{
     margin-top: 2em;
     background-color: black;
-    color: yellow;
+    color: #e1ad01 ;
     height: 35px;
     width: 110px;
     border-radius: 5px;
-    border: 2px solid  yellow;
+    border: 2px solid  #e1ad01 
     font-size: small;
 }
 
@@ -859,15 +846,6 @@ left: 350px;
   border: 10px solid black;
   color: green;
 }
-
-
-
-
-
-  
-
-
-
 
 
 .news-events{
@@ -1001,7 +979,124 @@ width: 100%;
   }
 }
 
+}
+.second-column {
+    padding: 20px; 
+}
+.aboutimg1 {
+    max-width: 100%; 
+    height: auto; 
+}
+.horizontal-line {
+    position: absolute;
+    width: 5%;
+    border-top: 2px solid red;
+    left:-15px;
+    top: 40px;
+    transform: translateY(-50%);
+}
 
+.cmission{
+    position: relative;
+    padding-left: 3rem;
+}
+  .cmission::after{
+    content: '';
+    width: 32px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+
+
+.history{
+    margin: 10rem;
+}
+.ourhistory{
+    padding: 1rem;
+    color: black;
+ 
+}
+
+.icon1{
+    width: 65%;
+}
+
+.values{
+padding: 1rem;
+text-align: left;
+}
+.about-cta{
+    margin: 1rem;
+}
+.aboutbutton {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .aboutbutton:hover {
+    color: #e1ad01 ;
+    border: 1px solid #e1ad01 ;
+  }
+
+
+.bottomcontainer {
+    margin: 0;
+    margin-top: -5rem;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+
+}
+
+.bottomcontent {
+    height: 50vh;
+    margin: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+    align-items: start;
+    padding-top: 4rem;
+    text-align: justify;
+    position: relative; 
+}
+
+.bottomcontent::before {
+    content: "";
+    position: absolute;
+    width: 2px; 
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInAnimation 2.5s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 
